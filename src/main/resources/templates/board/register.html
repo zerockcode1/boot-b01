@@ -57,6 +57,7 @@
         for (let i = 0; i < errors.length; i++) {
             errorMsg += `${errors[i].field}은(는) ${errors[i].code} \n`
         }
+        history.replaceState({}, null, null)
         alert(errorMsg)
     }
 
